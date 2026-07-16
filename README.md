@@ -6,9 +6,10 @@ Local control of an **EnviroVent ATMOS** positive‑input‑ventilation (PIV) lo
 > ⚠️ **Unofficial & reverse‑engineered. Use at your own risk.**
 > EnviroVent publishes no API. This integration was built by reverse‑engineering the
 > `myenvirovent` Android app and the unit's local protocol for personal
-> interoperability. It is not affiliated with or endorsed by EnviroVent. It talks to
-> your unit over a plain local TCP socket — no cloud, no telemetry. Commissioning /
-> installer settings are deliberately **not** exposed (see *Safety* below).
+> interoperability. It is **not affiliated with EnviroVent, Home Assistant, or HACS**
+> (see [Disclaimer](#disclaimer)). It talks to your unit over a plain local TCP
+> socket — no cloud, no telemetry. Commissioning / installer settings are
+> deliberately **not** exposed (see *Safety* below).
 
 ## What it does
 
@@ -101,6 +102,28 @@ envirovent_atmos.probe <ip>`); the integration bundles a copy under
 ## Screenshots
 
 _(placeholder — add screenshots of the device page and fan card here)_
+
+## Disclaimer
+
+This is an independent, unofficial, community project by a private individual.
+
+- **Not affiliated with EnviroVent.** This project is not affiliated with, authorised
+  by, endorsed by, or officially connected to EnviroVent Ltd in any way. *EnviroVent*
+  and *ATMOS* are trademarks of their respective owners, referenced here **solely to
+  identify the hardware this software interoperates with**. No endorsement is implied.
+- **Not affiliated with Home Assistant or HACS.** This project is not affiliated with,
+  endorsed by, or connected to the Open Home Foundation, Home Assistant, or HACS.
+  *Home Assistant* is a trademark of the Open Home Foundation, referenced here solely
+  to describe compatibility.
+- **Reverse-engineered for interoperability.** The protocol was determined by analysing
+  the vendor's own Android app and the unit's local network behaviour, in order to
+  interoperate with hardware the author owns. **No vendor code, firmware, or assets are
+  included or redistributed** by this project.
+- **No warranty — use entirely at your own risk.** This software commands physical
+  ventilation hardware. It may misbehave or stop working after a firmware change, and
+  using it may affect your unit's warranty or the support you receive from EnviroVent.
+  You alone are responsible for how you use it. The software is provided *"as is"*,
+  without warranty of any kind — see [LICENSE](LICENSE).
 
 ## License
 

@@ -4,7 +4,8 @@
 
 This is an **unofficial, community-maintained** Home Assistant integration for the
 EnviroVent ATMOS PIV, built by reverse-engineering the unit's local protocol. It is
-not affiliated with or endorsed by EnviroVent.
+**not affiliated with, authorised or endorsed by EnviroVent, Home Assistant, or HACS**
+— see the Disclaimer in the README for the full statement.
 
 **Security-relevant design notes:**
 
