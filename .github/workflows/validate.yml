@@ -7,6 +7,11 @@ on:
   schedule:
     - cron: "0 4 * * 1"
 
+# Least privilege: these jobs only ever read the repo. This also means a PR from a
+# fork cannot obtain a writable token.
+permissions:
+  contents: read
+
 jobs:
   hacs:
     name: HACS
@@ -17,6 +22,8 @@ jobs:
         uses: hacs/action@main
         with:
           category: integration
+          # Results appear as job annotations; no PR comment => no write scope needed.
+          comment: "false"
 
   hassfest:
     name: Hassfest
