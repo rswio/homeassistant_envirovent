@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EnviroVent ATMOS",
+        "description": "Enter the IP address of your ATMOS PIV unit. The control port is 1337.",
+        "data": {
+          "host": "Host / IP address",
+          "port": "Port"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "EnviroVent ATMOS",
+        "description": "Set up the EnviroVent ATMOS PIV unit discovered at {host}?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check the IP address, that the unit is on the network, and that the phone app is closed (the unit accepts only one connection at a time).",
+      "not_piv": "That device responded but is not an ATMOS PIV unit."
+    },
+    "abort": {
+      "already_configured": "This unit is already configured.",
+      "cannot_connect": "Failed to connect to the discovered unit.",
+      "not_piv": "The discovered device is not an ATMOS PIV unit."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EnviroVent ATMOS options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "fan": {
+      "airflow": { "name": "Airflow" }
+    },
+    "switch": {
+      "boost": { "name": "Boost" },
+      "auto_heater": { "name": "Auto heater" },
+      "summer_mode": { "name": "Summer mode" }
+    },
+    "select": {
+      "boost_duration": { "name": "Boost duration" },
+      "filter_period": { "name": "Filter period" }
+    },
+    "binary_sensor": {
+      "airflow_active": { "name": "Airflow active" },
+      "boost_input": { "name": "Boost input" },
+      "summer_bypass_active": { "name": "Summer bypass" },
+      "kick_up": { "name": "Kick up" },
+      "filter_needs_changing": { "name": "Filter needs changing" }
+    },
+    "sensor": {
+      "filter_days_remaining": { "name": "Filter days remaining" },
+      "hours_run": { "name": "Hours run" },
+      "airflow_percent": { "name": "Airflow" },
+      "airflow_mode": {
+        "name": "Airflow mode",
+        "state": { "preset": "Preset", "variable": "Variable" }
+      },
+      "heater_setpoint": { "name": "Heater setpoint" },
+      "summer_setpoint": { "name": "Summer setpoint" }
+    },
+    "button": {
+      "reset_filter": { "name": "Reset filter counter" }
+    }
+  }
+}

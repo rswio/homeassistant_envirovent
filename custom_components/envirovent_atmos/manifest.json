@@ -1,0 +1,15 @@
+{
+  "domain": "envirovent_atmos",
+  "name": "EnviroVent ATMOS",
+  "codeowners": ["@rswio"],
+  "config_flow": true,
+  "documentation": "https://github.com/rswio/homeassistant_envirovent",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/rswio/homeassistant_envirovent/issues",
+  "requirements": [],
+  "version": "0.1.0",
+  "zeroconf": [
+    { "type": "_http._tcp.local.", "name": "envirovent*" }
+  ]
+}

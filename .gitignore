@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Reverse-engineering artifacts — never commit the vendor APK, decompiled
+# sources, or packet captures (captures can contain unit/network identifiers).
+research/captures/*.pcap
+research/captures/*.pcapng
+*.apk
